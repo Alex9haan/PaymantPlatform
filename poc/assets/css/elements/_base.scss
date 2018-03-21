@@ -1,7 +1,9 @@
 ﻿img {
     height: 84px;
 }
-
+.small {
+    font-size: .7em;
+}
 .navbar, .toolbar, .subnavbar {
     background: #808080;
 }
@@ -29,11 +31,13 @@
     text-align: center;
     font-size: 90%;
     position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
 
     .close-btn {
         position: absolute;
         font-size: 1.5em;
-        right: 20px;
+        right: 0;
         top: -10px;
         opacity: .6;
         color: $btn-color;
@@ -59,4 +63,18 @@
     box-shadow: none;
     height: 42px;
     line-height: 42px;
+}
+.icon-center {
+    text-align: center; 
+    margin: 20px 0 40px 0;
+
+    span {
+        font-size: 6em;
+        line-height: 1;
+    }
+
+    small {
+        line-height: 1;
+        display: inline-block;
+    }
 }

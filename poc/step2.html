@@ -1,0 +1,50 @@
+<div data-page="step2" class="page" ng-controller="Step2Controller">
+    <div class="navbar custom-nav">
+       <div class="image"></div>
+    </div>
+    <div class="page-content custom-bg">
+        <div class="title-block">
+            <a href="home.html" class="ion-close-round close-btn"></a>
+            <h3>Insert You Paymant method</h3>
+            <p>
+                By inserting your paymant method you will be changed with the subscription fare of xx.&euro;
+            </p>
+        </div>
+        <div class="list-block inputs-list list-form">
+            <div class="icon-center">
+                <span class="ion-card"></span>
+                <small>
+                    <strong>Don't Worry</strong><br />
+                    This account will be converted in credit  when you're booking.'
+                </small>
+            </div>
+            <ul>
+                <li>
+                    <div class="item-content">
+                        <div class="item-inner">
+                            <div class="item-title label">INSERT A BILLING ADDRESS</div>
+                            <div class="item-input">
+                                <input type="text" ng-model="user.info.address" placeholder="Billing Address" />
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="check-term">
+                    <label class="label-checkbox item-content">
+                        <input type="checkbox" name="ks-checkbox" value="Books" checked="checked" />
+                        <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+                        <div class="item-inner">
+                            <small class="small">BIILING ADDRESS SAME AS MY DOMICILIE ADDRESS</small>
+                        </div>
+                    </label>
+                </li>
+
+            </ul>
+            <br />
+            <br />
+        </div>
+        <div class="content-block">
+            <p class="buttons-row"><a ng-click="save()" class="button button-raised custom-btn">SUBSCRIVE</a></p>
+        </div>
+    </div>
+</div>

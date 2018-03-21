@@ -35,7 +35,7 @@ var Welcomescreen = function (slides, options) {
     function setColors() {
         if (options.bgcolor) {
             container.css({
-                'background-color': options.bgcolor,
+                'background': options.bgcolor,
                 'color': options.fontcolor
             });
         }

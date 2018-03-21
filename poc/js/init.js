@@ -2,7 +2,7 @@
 var _fnWelcomInit = function () {
 
     var options = {
-        'bgcolor': '#0da6ec',
+        'bgcolor': '-webkit-linear-gradient(45deg, rgba(58,77,87,1) 0%, rgba(96,125,139,1) 100%)',
         'fontcolor': '#fff',
         'onOpened': function () {
             console.log("welcome screen opened");
@@ -18,17 +18,17 @@ var _fnWelcomInit = function () {
         {
             id: 'slide0',
             picture: '<div class="tutorialicon">♥</div>',
-            text: 'Welcome to this tutorial. In the <a class="tutorial-next-link" href="#">next steps</a> we will guide you through a manual that will teach you how to use this app.'
+            text: 'Welcome to this tutorial. In the <a class="tutorial-next-link" href="#">next steps</a>'
         },
         {
             id: 'slide1',
             picture: '<div class="tutorialicon">✲</div>',
-            text: 'This is slide 2'
+            text: '<a class="tutorial-previous-slide" href="#">previous slide</a><a class="tutorial-next-link" href="#">next steps</a>'
         },
         {
             id: 'slide2',
             picture: '<div class="tutorialicon">♫</div>',
-            text: 'This is slide 3'
+            text: '<a class="tutorial-previous-slide" href="#">previous slide</a><a class="tutorial-next-link" href="#">next steps</a>'
         },
         {
             id: 'slide3',

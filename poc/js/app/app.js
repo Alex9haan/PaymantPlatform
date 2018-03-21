@@ -13,12 +13,8 @@ app.run(function ($rootScope) {
         angular: true
     });
     mainView = myApp.addView('.view-main', {});
+    mainView.router.load({ url: 'home.html' });
     $rootScope.welcomescreen = _fnWelcomInit();
-})
-app.config(function () {
-    
-    window.location.hash = "#!/home.html";
-    
 })
 app.controller("RootController", ["$scope", function($scope) {
   $scope.title = "Welcome Page";

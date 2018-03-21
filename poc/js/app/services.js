@@ -5,7 +5,8 @@
             name: "",
             lastname: "",
             email: "",
-            password: ""
+            password: "",
+            address:""
         }
     };
 

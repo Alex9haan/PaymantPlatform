@@ -8,5 +8,7 @@
 }]);
 app.controller("Step1Controller", ["$scope", "$http", '$rootScope', 'userService', function ($scope, $http, $rootScope, $userService) {
     $scope.user = $userService.getUser();
-    
+    $scope.save = function () {
+        $userService.setUser($scope.user);
+    }
 }]);

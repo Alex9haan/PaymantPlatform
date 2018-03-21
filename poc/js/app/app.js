@@ -13,7 +13,7 @@ app.run(function ($rootScope) {
         angular: true
     });
     mainView = myApp.addView('.view-main', {});
-    $rootScope.welcomescreen = _fnWelcomInit();
+    //$rootScope.welcomescreen = _fnWelcomInit();
 })
 app.config(function () {
     

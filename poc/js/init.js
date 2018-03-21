@@ -1,9 +1,6 @@
 ﻿var welcomescreen;
 var _fnWelcomInit = function () {
 
-    if ($('.welcomescreen-container'))
-        $('.welcomescreen-container').remove();
-
     var options = {
         'bgcolor': '#0da6ec',
         'fontcolor': '#fff',

@@ -1,0 +1,62 @@
+﻿img {
+    height: 84px;
+}
+
+.navbar, .toolbar, .subnavbar {
+    background: #808080;
+}
+
+.picker-modal {
+    height: 100%;
+    width: 100%;
+    top: 0% !important;
+    left: 0% !important;
+    -webkit-box-shadow: 1px 11px 34px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 11px 34px -5px rgba(0,0,0,0.75);
+    box-shadow: 1px 11px 34px -5px rgba(0,0,0,0.75);
+}
+.custom-bg {
+    background-color: $bg-color;
+    color: $color;
+    padding-top: $padding-to!important;
+}
+
+.content-block {
+    margin: 0;
+}
+
+.title-block {
+    text-align: center;
+    font-size: 90%;
+    position: relative;
+
+    .close-btn {
+        position: absolute;
+        font-size: 1.5em;
+        right: 20px;
+        top: -10px;
+        opacity: .6;
+        color: $btn-color;
+    }
+}
+
+.title-block h3 {
+    font-size: 1.5em;
+    margin: 20px 0 0 0;
+}
+
+.title-block p {
+    font-weight: bold;
+    margin: 0;
+}
+
+
+.custom-btn {
+    border-radius: 100px;
+    background-color: #d1ddea;
+    color: $btn-color;
+    font-weight: bold;
+    box-shadow: none;
+    height: 42px;
+    line-height: 42px;
+}

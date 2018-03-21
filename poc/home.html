@@ -1,4 +1,74 @@
-<div data-page="home" class="page with-subnavbar" ng-controller="HomeController">
-   <br />
-    <p><a href="#" ng-click="fnOpen()" class="tutorial-open-btn button">Open Welcome Screen</a></p>
+    <div data-page="home" class="page" ng-controller="HomeController">
+    <div class="navbar custom-nav">
+       <div class="image"></div>
+    </div>
+    <div class="page-content custom-bg">
+        <div class="title-block">
+            <a class="ion-close-round close-btn"></a>
+            <h3>Join the YUKO world, now!</h3>
+            <p>
+                Register in with <a href="http://www.facebook.it" target="_blank">Facebook</a>
+            </p>
+        </div>
+        <div class="list-block inputs-list list-form">
+            <ul>
+                <li>
+                    <div class="item-content">
+                        <div class="item-inner">
+                            <div class="item-title label">FIRST NAME</div>
+                            <div class="item-input">
+                                <input type="text" ng-model="user.info.name" placeholder="First Name" />
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-inner">
+                            <div class="item-title label">LAST NAME</div>
+                            <div class="item-input">
+                                <input type="text" ng-model="user.info.lastname" placeholder="Last Name" />
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-inner">
+                            <div class="item-title label">EMAIL</div>
+                            <div class="item-input">
+                                <input type="email" ng-model="user.info.email" placeholder="E-mail" />
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-inner">
+                            <div class="item-title label">PASSWORD</div>
+                            <div class="item-input">
+                                <input type="password" ng-model="user.info.password" placeholder="Password" />
+                            </div>
+                            <small>
+                                Password must be at least 8 characters, contain at least one uppercase letter, a least one number.
+                            </small>
+                        </div>
+                    </div>
+                </li>
+                <li class="check-term">
+                    <label class="label-checkbox item-content">
+                        <input type="checkbox" name="ks-checkbox" value="Books" checked="checked" />
+                        <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+                        <div class="item-inner">
+                            <small>I accept The terms of License Agreement</small>
+                        </div>
+                    </label>
+                </li>
+
+            </ul>
+        </div>
+        <div class="content-block">
+            <p class="buttons-row"><a href="#" class="button button-raised custom-btn">SUBSCRIVE</a></p>
+        </div>
+    </div>
 </div>

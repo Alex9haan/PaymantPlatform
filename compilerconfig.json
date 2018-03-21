@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "poc/css/custom.css",
+    "inputFile": "poc/css/custom.scss"
+  },
+  {
+    "outputFile": "poc/assets/css/custom.css",
+    "inputFile": "poc/assets/css/custom.scss"
+  }
+]

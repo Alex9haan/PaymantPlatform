@@ -1,0 +1,31 @@
+﻿
+.list-form {
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.list-form ul::before {
+    background-color: transparent;
+}
+
+.item-input-field:after, .input-field:after {
+    background-color: black;
+}
+
+.list-block {
+    margin-bottom: 0;
+}
+
+.list-block .label, .list-block .list-block .floating-label {
+    font-weight: bold;
+}
+
+.list-block .item-content {
+    margin-bottom: 5px;
+}
+
+.check-term .item-inner {
+    margin-left: 0 !important;
+    line-height: 2;
+}

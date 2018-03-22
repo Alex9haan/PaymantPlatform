@@ -1,0 +1,33 @@
+﻿.bg-home {
+    background-color: $bg-color;
+    color: $color;
+    padding-top: 40% !important;
+
+    .logo-fly {
+        position: absolute;
+        top: 0;
+        right: 20px;
+
+        img {
+            height: auto;
+            box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    .btn-home {
+        display: block;
+        padding: 10px;
+        border: solid;
+
+        .text {
+            line-height: 5;
+            font-weight: bold;
+            margin-left: 15px;
+        }
+
+        .icon {
+            font-size: 5em;
+            float: left;
+        }
+    }
+}

@@ -4,6 +4,11 @@
 .small {
     font-size: .7em;
 }
+[ng-click],
+[data-ng-click],
+[x-ng-click] {
+    cursor: pointer;
+}
 .navbar, .toolbar, .subnavbar {
     background: #808080;
 }
@@ -21,6 +26,7 @@
     background-color: $bg-color;
     color: $color;
     padding-top: $padding-to!important;
+
 }
 
 .content-block {

@@ -25,6 +25,111 @@
             </div>
         </div>
     </div>
+    <!-- MODALS-->
+    <div class="popup confirm-card" ng-controller="CardConfirmController">
+        <div class="view navbar-fixed confirm-modal">
+
+            <div class="pages">
+                <div class="page">
+                    <div class="logo-fly">
+                        <img src="assets/img/head-logo.jpg" />
+                    </div>
+                    <div class="list-block inputs-list">
+                        <ul>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">CARD NUMBER</div>
+                                        <span class="icon-r">
+                                            <img src="assets/img/credit-card-icons.png" />
+                                        </span>
+                                        <div class="item-input">
+                                            <input type="text" ng-model="user.card.number" placeholder="Card Number" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content inlineX2">
+                                    <div class="item-inner">
+                                        <div class="item-title label">EXPIRACTION</div>
+                                        <div class="item-input">
+                                            <input type="text" ng-model="user.card.expiraction" placeholder="MM/YY" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-content inlineX2">
+                                    <div class="item-inner">
+                                        <div class="item-title label">CVC</div>
+                                        <div class="item-input">
+                                            <input type="text" ng-model="user.card.cvc" placeholder="CVC" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="content-block">
+                        <p class="buttons-row"><a data-popup=".confirm-card" ng-click="save()" class="button button-raised custom-btn">CONFIRM</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup end-ride" ng-controller="EndController">
+        <div class="view navbar-fixed confirm-modal">
+
+            <div class="pages">
+                <div class="page">
+                    <div class="logo-fly">
+                        <img src="assets/img/head-logo.jpg" />
+                    </div>
+                    <div class="list-block resume-list">
+                        <ul>
+                            <li>
+                                <div class="item-content">
+                                    <span class="ion-calendar pull-left"></span>
+                                    <p>
+                                        <h3>
+                                            You are going to pick-up the car at
+                                            <small>
+                                                Bussuola Parking Station NOW
+                                            </small>
+                                        </h3>
+                                        <a class="edit-btn">MODIFY</a>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <span class="ion-calendar pull-left"></span>
+                                    <p>
+                                        <h3>
+                                            You are Delivering the carin the same station
+                                            <small>
+                                                at 10:30 AM of the 06/10/2018
+                                            </small>
+                                        </h3>
+                                        <a class="edit-btn">MODIFY</a>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="total-info">
+                            <h3>TOTAL PRICE <strong class="str-line">40 &euro;</strong></h3>
+                            <h5>Your credit left <strong>10 &euro;</strong></h5>
+                            <h3>TOTAL TOTAL PRICE <strong>30 &euro;</strong></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODALS-->
+
     <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/js/swiper.jquery.min.js"></script>
 
@@ -38,5 +143,9 @@
     <script type="text/javascript" src="js/app/app.js"></script>
     <script src="js/app/services.js"></script>
     <script src="js/app/controllers.ctr.js"></script>
+
+
+
+
 </body>
 </html>

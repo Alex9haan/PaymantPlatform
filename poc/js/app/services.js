@@ -1,13 +1,9 @@
 ﻿app.service('userService', function () {
 
     var _user = {
-        info: {
-            name: "",
-            lastname: "",
-            email: "",
-            password: "",
-            address:""
-        }
+        info: {},
+        card: {}
+
     };
 
     this.setUser = function (u) {

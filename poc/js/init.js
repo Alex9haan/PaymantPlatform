@@ -2,8 +2,8 @@
 var _fnWelcomInit = function () {
 
     var options = {
-        'bgcolor': '-webkit-linear-gradient(45deg, rgba(58,77,87,1) 0%, rgba(96,125,139,1) 100%)',
-        'fontcolor': '#fff',
+        'bgcolor': '#d1ddea',
+        'fontcolor': '#686e6f',
         'onOpened': function () {
             console.log("welcome screen opened");
         },
@@ -23,17 +23,17 @@ var _fnWelcomInit = function () {
         {
             id: 'slide1',
             picture: '<div class="tutorialicon">✲</div>',
-            text: '<a class="tutorial-previous-slide" href="#">previous slide</a><a class="tutorial-next-link" href="#">next steps</a>'
+            text: '<a class="tutorial-previous-slide" href="#">previous</a><a class="tutorial-next-link" href="#">next</a>'
         },
         {
             id: 'slide2',
             picture: '<div class="tutorialicon">♫</div>',
-            text: '<a class="tutorial-previous-slide" href="#">previous slide</a><a class="tutorial-next-link" href="#">next steps</a>'
+            text: '<a class="tutorial-previous-slide" href="#">previous</a><a class="tutorial-next-link" href="#">next</a>'
         },
         {
             id: 'slide3',
             picture: '<div class="tutorialicon">☆</div>',
-            text: 'Thanks for reading! Enjoy this app or go to <a class="tutorial-previous-slide" href="#">previous slide</a>.<br><br><a class="tutorial-close-btn" href="#">End Tutorial</a>'
+            text: 'Thanks for reading! Enjoy this app or go to <a class="tutorial-previous-slide" href="#">previous</a>.<br><br><a class="tutorial-close-btn" href="#">End Tutorial</a>'
         }
 
     ];

@@ -55,6 +55,9 @@ img {
   box-shadow: none;
   height: 42px;
   line-height: 42px; }
+  .custom-btn.red {
+    background-color: #ff4a4a;
+    color: #fff !important; }
 
 .icon-center {
   text-align: center;
@@ -65,6 +68,27 @@ img {
   .icon-center small {
     line-height: 1;
     display: inline-block; }
+
+.icons-list ul {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+  .icons-list ul li {
+    text-align: center;
+    padding: 10px 5px;
+    float: left;
+    width: 30%; }
+    .icons-list ul li .icon {
+      color: #ff4a4a;
+      font-size: 2em;
+      margin-right: 5px;
+      line-height: 2;
+      vertical-align: middle; }
+    .icons-list ul li .value {
+      font-weight: bold;
+      margin-right: 5px; }
 
 .list-form {
   margin-left: 10px;
@@ -85,6 +109,9 @@ img {
 
 .list-block .item-content {
   margin-bottom: 5px; }
+  .list-block .item-content.inlineX2 {
+    display: inline-block;
+    width: 49%; }
 
 .check-term .item-inner {
   margin-left: 0 !important;
@@ -101,6 +128,126 @@ img {
     /* <------ */
     background-repeat: no-repeat;
     background-position: center center; }
+
+.tutorial-previous-slide {
+  float: left; }
+
+.tutorial-next-link {
+  float: right; }
+
+.confirm-card {
+  padding: 0 20px 70px 20px;
+  max-height: 500px;
+  background: transparent;
+  top: 5%;
+  box-shadow: none !important; }
+  .confirm-card .confirm-modal {
+    border-radius: 10px;
+    border: solid 3px #6f9ce4;
+    box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.5); }
+    .confirm-card .confirm-modal .page {
+      background-color: #e6f4f7;
+      color: #686e6f; }
+      .confirm-card .confirm-modal .page .icon-r {
+        width: 120px;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 10px; }
+        .confirm-card .confirm-modal .page .icon-r img {
+          width: 100%;
+          height: auto; }
+      .confirm-card .confirm-modal .page .item-content {
+        margin-bottom: 15px;
+        padding-top: 20px; }
+    .confirm-card .confirm-modal .list-block {
+      margin-top: 0; }
+    .confirm-card .confirm-modal .logo-fly {
+      width: 100%;
+      text-align: center;
+      background-color: #fff;
+      border-bottom: solid 3px #6f9ce4; }
+      .confirm-card .confirm-modal .logo-fly img {
+        margin-right: 10px; }
+
+.end-ride {
+  padding: 0 20px 70px 20px;
+  max-height: 500px;
+  background: transparent;
+  top: 5%;
+  box-shadow: none !important; }
+  .end-ride .confirm-modal {
+    border-radius: 10px;
+    border: solid 3px #6f9ce4;
+    box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.5); }
+    .end-ride .confirm-modal .page {
+      background-color: #e6f4f7;
+      color: #686e6f; }
+      .end-ride .confirm-modal .page .icon-r {
+        width: 120px;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 10px; }
+        .end-ride .confirm-modal .page .icon-r img {
+          width: 100%;
+          height: auto; }
+      .end-ride .confirm-modal .page .item-content {
+        margin-bottom: 15px;
+        padding-top: 20px; }
+    .end-ride .confirm-modal .resume-list li {
+      border-bottom: solid 1px; }
+    .end-ride .confirm-modal .resume-list .pull-left {
+      font-size: 1.5em; }
+    .end-ride .confirm-modal .resume-list h3 {
+      font-size: .8em;
+      margin-left: 15px;
+      font-weight: lighter; }
+      .end-ride .confirm-modal .resume-list h3 small {
+        font-size: 1em;
+        font-weight: bold;
+        display: inline-block; }
+    .end-ride .confirm-modal .total-info {
+      margin-top: 10px;
+      padding: 10px; }
+      .end-ride .confirm-modal .total-info .str-line {
+        text-decoration: line-through; }
+      .end-ride .confirm-modal .total-info h3 {
+        font-size: 1em;
+        margin: 0 0 5px 0;
+        padding: 0;
+        font-weight: normal; }
+      .end-ride .confirm-modal .total-info h5 {
+        font-weight: normal;
+        font-size: .9em;
+        margin: 0 0 5px 0;
+        padding: 0; }
+      .end-ride .confirm-modal .total-info h3, .end-ride .confirm-modal .total-info h5 {
+        text-align: right; }
+        .end-ride .confirm-modal .total-info h3 strong, .end-ride .confirm-modal .total-info h5 strong {
+          margin-left: 10px; }
+    .end-ride .confirm-modal .list-block {
+      margin-top: 0; }
+    .end-ride .confirm-modal .edit-btn {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      font-size: .7em;
+      font-weight: bold; }
+    .end-ride .confirm-modal .logo-fly {
+      width: 100%;
+      text-align: center;
+      background-color: #fff;
+      border-bottom: solid 3px #6f9ce4; }
+      .end-ride .confirm-modal .logo-fly img {
+        margin-right: 10px; }
+
+.full-image .navbar {
+  height: 60vh; }
+
+.full-image .custom-bg {
+  background-color: #fcfeff;
+  padding-top: 60vh !important; }
 
 /*!
   Ionicons, v2.0.0

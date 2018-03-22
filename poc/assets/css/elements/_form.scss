@@ -23,6 +23,11 @@
 
 .list-block .item-content {
     margin-bottom: 5px;
+
+    &.inlineX2 {
+        display:inline-block;
+        width:49%;
+    }
 }
 
 .check-term .item-inner {

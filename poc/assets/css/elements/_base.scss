@@ -63,6 +63,11 @@
     box-shadow: none;
     height: 42px;
     line-height: 42px;
+
+    &.red {
+        background-color: #ff4a4a;
+        color: #fff!important;
+    }
 }
 .icon-center {
     text-align: center; 
@@ -76,5 +81,34 @@
     small {
         line-height: 1;
         display: inline-block;
+    }
+}
+.icons-list {
+    ul {
+        list-style: none;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+        li {
+            text-align: center;
+            padding: 10px 5px;
+            float: left;
+            width: 30%;
+
+            .icon {
+                color: #ff4a4a;
+                font-size: 2em;
+                margin-right: 5px;
+                line-height: 2;
+                vertical-align: middle;
+            }
+
+            .value {
+                font-weight: bold;
+                margin-right: 5px;
+            }
+        }
     }
 }

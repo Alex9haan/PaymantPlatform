@@ -268,7 +268,8 @@ img {
   .bg-home .btn-home {
     display: block;
     padding: 10px;
-    border: solid; }
+    border: solid;
+    border-radius: 100px; }
     .bg-home .btn-home .text {
       line-height: 5;
       font-weight: bold;

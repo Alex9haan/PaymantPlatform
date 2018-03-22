@@ -42,12 +42,15 @@ app.controller("Step3Controller", ["$scope", "$http", '$rootScope', 'userService
 }]);
 app.controller("EndController", ["$scope", "$http", '$rootScope', 'userService', '$timeout', function ($scope, $http, $rootScope, $userService, $timeout) {
     $scope.user = $userService.getUser();
+    var promise = null;
     var _end = function () {
         myApp.closeModal('.end-ride');
         mainView.router.load({ url: 'home.html' });
     }
    
     $scope.$on('end-started', function (event, args) {
-        $timeout(_end, 10000);
+        if(promise)
+            $timeout.cancel(promise);
+        promise = $timeout(_end, 10000);
     });
 }]);

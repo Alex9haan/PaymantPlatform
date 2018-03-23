@@ -267,7 +267,8 @@ img {
     right: 20px; }
     .bg-home .logo-fly img {
       height: auto;
-      box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.5); }
+      box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.5);
+      max-height: 130px; }
   .bg-home .btn-home {
     display: block;
     padding: 10px;

@@ -2,8 +2,8 @@
 var _fnWelcomInit = function () {
 
     var options = {
-        'bgcolor': '#d1ddea',
-        'fontcolor': '#686e6f',
+        'bgcolor': 'linear-gradient(to right top, #570214, #73011b, #910022, #af0028, #ce002e)',
+        'fontcolor': '#fff',
         'onOpened': function () {
             console.log("welcome screen opened");
         },

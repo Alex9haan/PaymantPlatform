@@ -111,6 +111,11 @@ img {
 
 .list-block {
   margin-bottom: 0; }
+  .list-block.dotted ul > li {
+    box-sizing: border-box;
+    position: relative;
+    border-bottom: dotted 1px;
+    margin-bottom: 10px; }
 
 .list-block .label, .list-block .list-block .floating-label {
   font-weight: bold; }

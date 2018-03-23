@@ -64,13 +64,29 @@ app.controller("PaymentStep1Controller", ["$scope", "$http", '$rootScope', 'user
     var promise = null;
     var _end = function () {
         myApp.hideIndicator();
-        mainView.router.load({ url: 'home.html' });
+        mainView.router.load({ url: 'payment/step2.html' });
     }
 
     $scope.save = function () {
         myApp.showIndicator();
         $userService.setUser($scope.user);
         if (promise) 
+            $timeout.cancel(promise);
+        promise = $timeout(_end, 2000);
+    }
+}]);
+app.controller("PaymentStep2Controller", ["$scope", "$http", '$rootScope', 'userService', '$timeout', function ($scope, $http, $rootScope, $userService, $timeout) {
+    $scope.user = $userService.getUser();
+    var promise = null;
+    var _end = function () {
+        myApp.hideIndicator();
+        myApp.alert('Payment successful!');
+    }
+
+    $scope.save = function () {
+        myApp.showIndicator();
+        $userService.setUser($scope.user);
+        if (promise)
             $timeout.cancel(promise);
         promise = $timeout(_end, 3000);
     }

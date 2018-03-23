@@ -7,7 +7,7 @@ var $$ = Dom7;
 var app = angular.module("AngularApp", []);
 app.run(function ($rootScope) {
     myApp = new Framework7({
-        modalTitle: 'Framework7',
+        modalTitle: 'Paymant Platform',
         material: true,
         pushState: true,
         angular: true
@@ -17,7 +17,7 @@ app.run(function ($rootScope) {
     $rootScope.welcomescreen = _fnWelcomInit();
 })
 app.controller("RootController", ["$scope", function($scope) {
-  $scope.title = "Welcome Page";
+    $scope.title = "Paymant Platform";
 }])
 
 

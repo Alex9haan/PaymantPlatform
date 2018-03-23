@@ -1,6 +1,6 @@
-﻿app.controller("HomeController", ["$scope", "$http", '$rootScope', 'userService', function ($scope, $http, $rootScope, $userService) {
+﻿app.controller("HomeController", ["$scope", "$http", '$rootScope', 'userService',' $http', function ($scope, $http, $rootScope, $userService, $http) {
     $scope.user = $userService.getUser();
-    
+   
     $scope.openWelcom = function () {
         $rootScope.welcomescreen.open();
     }
@@ -40,7 +40,7 @@ app.controller("Step3Controller", ["$scope", "$http", '$rootScope', 'userService
         myApp.pickerModal('.end-ride');
     }
 }]);
-app.controller("EndController", ["$scope", "$http", '$rootScope', 'userService', '$timeout', function ($scope, $http, $rootScope, $userService, $timeout) {
+app.controller("EndController", ["$scope", "$http", '$rootScope', 'userService', '$timeout', '$http', function ($scope, $http, $rootScope, $userService, $timeout, $http) {
     $scope.user = $userService.getUser();
     var promise = null;
     var _end = function () {
@@ -51,8 +51,11 @@ app.controller("EndController", ["$scope", "$http", '$rootScope', 'userService',
     $scope.$on('end-started', function (event, args) {
         if (promise) 
             $timeout.cancel(promise);
-        promise = $timeout(_end, 10000);
+       // promise = $timeout(_end, 10000);
     });
+
+    
+
 }]);
 
 //PAYMENT

@@ -17,23 +17,18 @@ var _fnWelcomInit = function () {
     welcomescreen_slides = [
         {
             id: 'slide0',
-            picture: '<div class="tutorialicon">♥</div>',
+            picture: '<div class="tutorialicon">slide 1</div>',
             text: 'Welcome to this tutorial. In the <a class="tutorial-next-link" href="#">next steps</a>'
         },
         {
             id: 'slide1',
-            picture: '<div class="tutorialicon">✲</div>',
+            picture: '<div class="tutorialicon">slide 2</div>',
             text: '<a class="tutorial-previous-slide" href="#">previous</a><a class="tutorial-next-link" href="#">next</a>'
         },
         {
             id: 'slide2',
-            picture: '<div class="tutorialicon">♫</div>',
+            picture: '<div class="tutorialicon">slide 3</div>',
             text: '<a class="tutorial-previous-slide" href="#">previous</a><a class="tutorial-next-link" href="#">next</a>'
-        },
-        {
-            id: 'slide3',
-            picture: '<div class="tutorialicon">☆</div>',
-            text: 'Thanks for reading! Enjoy this app or go to <a class="tutorial-previous-slide" href="#">previous</a>.<br><br><a class="tutorial-close-btn" href="#">End Tutorial</a>'
         }
 
     ];

@@ -6,3 +6,30 @@
 .tutorial-next-link {
     float: right;
 }
+.swiper-slide {
+    background-size: cover; /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    min-height: 100%;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom right,transparent,#000000);
+        opacity: .6;
+    }
+}
+#slide0 {
+    background-image: url('../img/slides/1.jpg');
+}
+#slide1 {
+    background-image: url('../img/slides/2.jpg');
+}
+#slide2 {
+    background-image: url('../img/slides/3.jpg');
+}

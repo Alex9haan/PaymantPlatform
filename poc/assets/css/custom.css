@@ -143,6 +143,32 @@ img {
 .tutorial-next-link {
   float: right; }
 
+.swiper-slide {
+  background-size: cover;
+  /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  min-height: 100%; }
+  .swiper-slide:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, transparent, #000000);
+    opacity: .6; }
+
+#slide0 {
+  background-image: url("../img/slides/1.jpg"); }
+
+#slide1 {
+  background-image: url("../img/slides/2.jpg"); }
+
+#slide2 {
+  background-image: url("../img/slides/3.jpg"); }
+
 .confirm-card {
   padding: 0 20px 70px 20px;
   max-height: 500px;
@@ -180,7 +206,7 @@ img {
 
 .end-ride {
   padding: 0 20px 70px 20px;
-  max-height: 500px;
+  max-height: 600px;
   background: transparent;
   top: 5%;
   box-shadow: none !important; }
@@ -203,6 +229,8 @@ img {
       .end-ride .confirm-modal .page .item-content {
         margin-bottom: 15px;
         padding-top: 20px; }
+    .end-ride .confirm-modal .download-block {
+      border-top: solid 1px; }
     .end-ride .confirm-modal .resume-list li {
       border-bottom: solid 1px; }
     .end-ride .confirm-modal .resume-list .pull-left {

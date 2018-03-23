@@ -1,4 +1,4 @@
-﻿app.controller("HomeController", ["$scope", "$http", '$rootScope', 'userService',' $http', function ($scope, $http, $rootScope, $userService, $http) {
+﻿app.controller("HomeController", ["$scope", "$http", '$rootScope', 'userService', function ($scope, $http, $rootScope, $userService) {
     $scope.user = $userService.getUser();
    
     $scope.openWelcom = function () {

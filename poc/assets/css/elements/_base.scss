@@ -41,12 +41,17 @@
     margin-right: 20px;
 
     .close-btn {
+        
         position: absolute;
         font-size: 1.5em;
-        right: 0;
-        top: -10px;
+        right: -25px;
+        padding: 10px;
+        line-height: 2;
+        width: 50px;
+        top: -25px;
         opacity: .6;
-        color: $btn-color;
+        
+        height: 50px;
     }
 }
 

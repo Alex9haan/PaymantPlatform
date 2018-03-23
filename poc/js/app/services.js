@@ -1,9 +1,9 @@
 ﻿app.service('userService', function () {
 
     var _user = {
-        info: {},
-        card: {}
-
+        info:{},
+        card:{},
+        payment:{}
     };
 
     this.setUser = function (u) {

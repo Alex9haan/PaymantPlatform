@@ -1,0 +1,106 @@
+    <div data-page="step1" class="page" ng-controller="PaymentStep1Controller">
+    <div class="navbar custom-nav">
+       <div class="image"></div>
+    </div>
+    <div class="page-content custom-bg">
+        <div class="title-block">
+            <a href="home.html" class="ion-close-round close-btn"></a>
+            <h3>Pay the installment expired</h3>
+            <p>
+                Below you can enter the data for the payment of an expired installment
+            </p>
+        </div>
+        <div class="list-block inputs-list list-form">
+            <ul>
+                <li>
+                    <div class="item-content">
+                        <div class="item-inner">
+                            <div class="item-title label">FISCAL CODE / VAT NUMBER </div>
+                            <div class="item-input">
+                                <input type="text" ng-model="user.payment.vat" placeholder="C.F. o P.IVA" />
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-inner">
+                            <div class="item-title label">CF or VAT number of the card holder, if different</div>
+                            <div class="item-input">
+                                <input type="text" ng-model="user.payment.vat2" placeholder="C.F. o P.IVA" />
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+
+                        <div class="item-inner">
+                            <div class="item-title label">TYPE OF CONTRACT</div>
+                            <div class="item-input">
+                                <select ng-model="user.payment.contractType">
+                                    <option>Finanziamento</option>
+                                    <option>Leasing</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-inner">
+                            <div class="item-title label">CONTRACT NUMBER</div>
+                            <div class="item-input">
+                                <input type="text" ng-model="user.payment.contractNumber" placeholder="C.F. o P.IVA" />
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-inner">
+                            <div class="item-title label">AMOUNT (&euro;)</div>
+                            <div class="item-input">
+                                <input type="text" ng-model="user.payment.amount" placeholder="Enter the amount (Ex. 256.25)" />
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-inner">
+                            <div class="item-title label">EMAIL</div>
+                            <div class="item-input">
+                                <input type="email" ng-model="user.payment.email" placeholder="E-mail" />
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-inner">
+                            <div class="item-title label">MOBILE NUMBER</div>
+                            <div class="item-input">
+                                <input type="number" ng-model="user.payment.email" placeholder="Enter the Mobile number" />
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="check-term">
+                    <label class="label-checkbox item-content">
+                        <input type="checkbox" name="ks-checkbox" value="Books" checked="checked" />
+                        <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+                        <div class="item-inner">
+                            <small class="small">I agree to the treatment of my personal information</small>
+                        </div>
+                    </label>
+                </li>
+
+
+            </ul>
+        </div>
+        <div class="content-block">
+            <p class="buttons-row"><a ng-click="save()" class="button button-raised custom-btn">SEND</a></p>
+        </div>
+    </div>
+</div>

@@ -9,16 +9,16 @@
             <p>
                 Register in with <a href="http://www.facebook.it" target="_blank">Facebook</a>
             </p>
+        
         </div>
         <div class="list-block inputs-list list-form">
             <ul>
                 <li>
                     <div class="item-content">
+                      
                         <div class="item-inner">
                             <div class="item-title label">FIRST NAME</div>
-                            <div class="item-input">
-                                <input type="text" ng-model="user.info.name" placeholder="First Name" />
-                            </div>
+                                <p typed-effect text="user.info.name" delay="1000" blink="false" ></p>
                         </div>
                     </div>
                 </li>
@@ -26,9 +26,7 @@
                     <div class="item-content">
                         <div class="item-inner">
                             <div class="item-title label">LAST NAME</div>
-                            <div class="item-input">
-                                <input type="text" ng-model="user.info.lastname" placeholder="Last Name" />
-                            </div>
+                            <p typed-effect text="user.info.lastname" delay="3000" blink="false" ></p>
                         </div>
                     </div>
                 </li>
@@ -36,9 +34,7 @@
                     <div class="item-content">
                         <div class="item-inner">
                             <div class="item-title label">EMAIL</div>
-                            <div class="item-input">
-                                <input type="email" ng-model="user.info.email" placeholder="E-mail" />
-                            </div>
+                            <p typed-effect text="user.info.email" delay="5000" blink="false" ></p>
                         </div>
                     </div>
                 </li>
@@ -46,11 +42,9 @@
                     <div class="item-content">
                         <div class="item-inner">
                             <div class="item-title label">PASSWORD</div>
-                            <div class="item-input">
-                                <input type="password" ng-model="user.info.password" placeholder="Password" />
-                            </div>
+                            <p typed-effect text="user.info.password" delay="7000" blink="false" ></p>
                             <small class="small">
-                                Password must be at least 8 characters, contain at least one uppercase letter, a least one number.
+                                Password must be at least 8 characters, contain at least one uppercase letter, at least one number.
                             </small>
                         </div>
                     </div>
@@ -68,7 +62,7 @@
             </ul>
         </div>
         <div class="content-block">
-            <p class="buttons-row"><a ng-click="save()" class="button button-raised custom-btn">SUBSCRIBE</a></p>
+            <p class="buttons-row"><a id="bottom" ng-click="save()" class="button button-raised custom-btn" ng-class="{'active': finish == true}">SUBSCRIBE</a></p>
         </div>
     </div>
 </div>

@@ -6,5 +6,9 @@
   {
     "outputFile": "poc/assets/css/custom.css",
     "inputFile": "poc/assets/css/custom.scss"
+  },
+  {
+    "outputFile": "poc2/assets/css/custom.css",
+    "inputFile": "poc2/assets/css/custom.scss"
   }
 ]

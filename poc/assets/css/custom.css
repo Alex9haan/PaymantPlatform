@@ -2,6 +2,24 @@
 img {
   height: 84px; }
 
+.title-app {
+  margin: 0;
+  position: absolute;
+  top: 5%;
+  width: 50%;
+  left: 0px;
+  background-color: #607d8b;
+  color: #fff;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 10px; }
+
+.pull-left {
+  float: left; }
+
+.pull-right {
+  float: right; }
+
 .small {
   font-size: .7em; }
 
@@ -66,6 +84,9 @@ img {
   .custom-btn.red {
     background-color: #ff4a4a;
     color: #fff !important; }
+  .custom-btn.active {
+    background-color: #5fc532;
+    color: #fff !important; }
 
 .icon-center {
   text-align: center;
@@ -125,6 +146,11 @@ img {
   .list-block .item-content.inlineX2 {
     display: inline-block;
     width: 49%; }
+
+.item-inner p {
+  border-bottom: solid 1px;
+  margin-top: 5px;
+  min-height: 25px; }
 
 .check-term .item-inner {
   margin-left: 0 !important;
@@ -281,6 +307,81 @@ img {
       background-color: #fff;
       border-bottom: solid 3px #6f9ce4; }
       .end-ride .confirm-modal .logo-fly img {
+        margin-right: 10px; }
+
+.end-payment {
+  padding: 0 20px 70px 20px;
+  max-height: 500px;
+  background: transparent;
+  top: 5%;
+  box-shadow: none !important; }
+  .end-payment .confirm-modal {
+    border-radius: 10px;
+    border: solid 3px #6f9ce4;
+    box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.5); }
+    .end-payment .confirm-modal .page {
+      background-color: #e6f4f7;
+      color: #686e6f; }
+      .end-payment .confirm-modal .page .icon-r {
+        width: 120px;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 10px; }
+        .end-payment .confirm-modal .page .icon-r img {
+          width: 100%;
+          height: auto; }
+      .end-payment .confirm-modal .page .item-content {
+        margin-bottom: 15px;
+        padding-top: 20px;
+        justify-content: baseline; }
+    .end-payment .confirm-modal .download-block {
+      border-top: solid 1px; }
+    .end-payment .confirm-modal .resume-list li {
+      border-bottom: solid 1px; }
+    .end-payment .confirm-modal .resume-list .pull-left {
+      font-size: 1.5em; }
+    .end-payment .confirm-modal .resume-list h3 {
+      font-size: .8em;
+      margin-left: 15px;
+      font-weight: lighter; }
+      .end-payment .confirm-modal .resume-list h3 small {
+        font-size: 1em;
+        font-weight: bold;
+        display: block; }
+    .end-payment .confirm-modal .total-info {
+      margin-top: 10px;
+      padding: 10px; }
+      .end-payment .confirm-modal .total-info .str-line {
+        text-decoration: line-through; }
+      .end-payment .confirm-modal .total-info h3 {
+        font-size: 1em;
+        margin: 0 0 5px 0;
+        padding: 0;
+        font-weight: normal; }
+      .end-payment .confirm-modal .total-info h5 {
+        font-weight: normal;
+        font-size: .9em;
+        margin: 0 0 5px 0;
+        padding: 0; }
+      .end-payment .confirm-modal .total-info h3, .end-payment .confirm-modal .total-info h5 {
+        text-align: right; }
+        .end-payment .confirm-modal .total-info h3 strong, .end-payment .confirm-modal .total-info h5 strong {
+          margin-left: 10px; }
+    .end-payment .confirm-modal .list-block {
+      margin-top: 0; }
+    .end-payment .confirm-modal .edit-btn {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      font-size: .7em;
+      font-weight: bold; }
+    .end-payment .confirm-modal .logo-fly {
+      width: 100%;
+      text-align: center;
+      background-color: #fff;
+      border-bottom: solid 3px #6f9ce4; }
+      .end-payment .confirm-modal .logo-fly img {
         margin-right: 10px; }
 
 .full-image .navbar {

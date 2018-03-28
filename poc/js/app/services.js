@@ -1,9 +1,34 @@
 ﻿app.service('userService', function () {
 
     var _user = {
-        info:{},
-        card:{},
-        payment:{}
+        info: {
+            name: "Mario",
+            lastname: "Rossi",
+            email: "m.rossi@mail.it",
+            password: "123456",
+            address: "Via del Corso 11"
+        },
+        card: [
+            {
+                number: "1234-1234-1234",
+                expiraction: "12/23",
+                cvc: "123"
+            },
+            {
+                number: "4567-45567-45678",
+                expiraction: "10/22",
+                cvc: "321"
+            }
+        ],
+        payment: {
+            email: "m.rossi@mail.it",
+            phone: "334-12345678",
+            amount: "0,01",
+            contractNumber: "123456",
+            contractType: "Finanziamento",
+            vat:"RSSMRA80A01H501U"
+
+        }
     };
 
     this.setUser = function (u) {

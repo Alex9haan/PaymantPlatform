@@ -7,7 +7,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="theme-color" content="#0da6ec">
-    <title>PaymantPlatform</title>
+    <title>TFS | Payment Gateway</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/css/swiper.min.css">
     <link rel="stylesheet" href="../bower_components/welcom/welcomescreen.css">
 
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../bower_components/framework7/dist/css/framework7.material.colors.css">
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css">
     <link href="assets/css/custom.min.css" rel="stylesheet" />
-    <link rel="icon" href="img/icon.png">
+    <link rel="icon" href="assets/img/icon.ico">
 </head>
 <body class="theme-bluegray" ng-controller="RootController" ng-cloak>
     <div class="views">
@@ -26,7 +26,7 @@
         </div>
     </div>
     <!-- MODALS-->
-    <div class="popup confirm-card" ng-controller="CardConfirmController">
+    <div id="confirm-card-sharing" class="popup confirm-card" ng-controller="CardConfirmController">
         <div class="view navbar-fixed confirm-modal">
 
             <div class="pages">
@@ -43,9 +43,7 @@
                                         <span class="icon-r">
                                             <img src="assets/img/credit-card-icons.png" />
                                         </span>
-                                        <div class="item-input">
-                                            <input type="text" ng-model="user.card.number" placeholder="Card Number" />
-                                        </div>
+                                        <p typed-effect text="user.card[0].number" delay="1000" blink="false" isstart="isStarted"></p>
                                     </div>
                                 </div>
                             </li>
@@ -53,17 +51,13 @@
                                 <div class="item-content inlineX2">
                                     <div class="item-inner">
                                         <div class="item-title label">EXPIRACTION</div>
-                                        <div class="item-input">
-                                            <input type="text" ng-model="user.card.expiraction" placeholder="MM/YY" />
-                                        </div>
+                                        <p typed-effect text="user.card[0].expiraction" delay="3000" blink="false" isstart="isStarted"></p>
                                     </div>
                                 </div>
                                 <div class="item-content inlineX2">
                                     <div class="item-inner">
                                         <div class="item-title label">CVC</div>
-                                        <div class="item-input">
-                                            <input type="text" ng-model="user.card.cvc" placeholder="CVC" />
-                                        </div>
+                                        <p typed-effect text="user.card[0].cvc" delay="5000" blink="false" isstart="isStarted"></p>
                                     </div>
                                 </div>
                             </li>
@@ -71,7 +65,52 @@
 
                     </div>
                     <div class="content-block">
-                        <p class="buttons-row"><a data-popup=".confirm-card" ng-click="save()" class="button button-raised custom-btn">CONFIRM</a></p>
+                        <p class="buttons-row"><a data-popup=".confirm-card" ng-click="save()" class="button button-raised custom-btn" ng-class="{'active': finish == true}">CONFIRM</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="payment-card" class="popup confirm-card" ng-controller="CardConfirm2Controller">
+        <div class="view navbar-fixed confirm-modal">
+
+            <div class="pages">
+                <div class="page">
+                    <div class="logo-fly">
+                        <img src="assets/img/head-logo.jpg" />
+                    </div>
+                    <div class="list-block inputs-list">
+                        <ul>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">CARD NUMBER</div>
+                                        <span class="icon-r">
+                                            <img src="assets/img/credit-card-icons.png" />
+                                        </span>
+                                        <p typed-effect text="user.card[1].number" delay="1000" blink="false" isstart="isStarted"></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content inlineX2">
+                                    <div class="item-inner">
+                                        <div class="item-title label">EXPIRACTION</div>
+                                        <p typed-effect text="user.card[1].expiraction" delay="3000" blink="false" isstart="isStarted"></p>
+                                    </div>
+                                </div>
+                                <div class="item-content inlineX2">
+                                    <div class="item-inner">
+                                        <div class="item-title label">CVC</div>
+                                        <p typed-effect text="user.card[1].cvc" delay="5000" blink="false" isstart="isStarted"></p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="content-block">
+                        <p class="buttons-row"><a data-popup=".confirm-card" ng-click="save()" class="button button-raised custom-btn" ng-class="{'active': finish == true}">CONFIRM</a></p>
                     </div>
                 </div>
             </div>
@@ -106,7 +145,7 @@
                                     <span class="ion-calendar pull-left"></span>
                                     <p>
                                         <h3>
-                                            You are Delivering the carin the same station
+                                            You are Delivering the car in the same station
                                             <small>
                                                 at 10:30 AM of the 06/10/2018
                                             </small>
@@ -117,26 +156,78 @@
                             </li>
                         </ul>
                         <div class="total-info">
-                            <h3>TOTAL PRICE <strong class="str-line">40 &euro;</strong></h3>
                             <h5>Your credit left <strong>10 &euro;</strong></h5>
-                            <h3>TOTAL TOTAL PRICE <strong>30 &euro;</strong></h3>
+                            <h3>TOTAL PRICE <strong>30 &euro;</strong></h3>
                         </div>
                     </div>
                     <div class="content-block download-block">
                         <p class="buttons-row">
-                        <a ng-href="download.pdf" external download="download.pdf" class="button button-raised custom-btn external">GET INVOICE</a></p>
+                            <a ng-href="download.pdf" external download="download.pdf" class="button button-raised custom-btn external">GET INVOICE</a>
+                        </p>
+                        <p class="buttons-row">
+                            <a ng-click="goBack()" class="button button-raised custom-btn"> <span class="ion-chevron-left pull-left"></span> BACK TO HOME</a>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+    <div class="popup end-payment " ng-controller="EndPaymentController">
+        <div class="view navbar-fixed confirm-modal">
+            <div class="pages">
+                <div class="page">
+                    <div class="logo-fly">
+                        <img src="assets/img/head-logo.jpg" />
+                    </div>
+                    <div class="list-block resume-list">
+                        <ul>
+                            <li>
+                                <div class="item-content">
+                                    <span class="ion-calendar pull-left"></span>
+                                    <p>
+                                        <h3>
+                                            Transition Number
+                                            <small>
+                                                0001672229991{{date.getTime() }}
+                                            </small>
+                                        </h3>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <span class="ion-calendar pull-left"></span>
+                                    <p>
+                                        <h3>
+                                           Date of payment
+                                            <small>
+                                                at {{ date | date:'hh:mm:ss a'}} of the  {{date | date:'yyyy-MM-dd'}}
+                                            </small>
+                                        </h3>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="total-info">
+                            <h3>TOTAL PRICE <strong>{{user.payment.amount}} &euro;</strong></h3>
+                        </div>
+                    </div>
+                    <div class="content-block download-block">
+                        <p class="buttons-row">
+                            <a ng-click="goBack()"  class="button button-raised custom-btn"><span class="ion-chevron-left pull-left"></span> BACK TO HOME</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- MODALS-->
 
     <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/js/swiper.jquery.min.js"></script>
 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/js/swiper.jquery.min.js"></script>
     <script type="text/javascript" src="../bower_components/angular/angular.min.js"></script>
+    <script src="../bower_components/angularjs-typed-effect/dist/typed-effect.min.js"></script>
     <script type="text/javascript" src="../bower_components/framework7/dist/js/framework7.js"></script>
     <script type="text/javascript" src="../dist/framework7.angular.hook.js"></script>
     <script type="text/javascript" src="../bower_components/welcom/welcomescreen.js"></script>

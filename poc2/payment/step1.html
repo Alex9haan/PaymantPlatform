@@ -1,0 +1,56 @@
+    <div data-page="step1" class="page" ng-controller="Step1Controller">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left"><a href="home.html" class="back link icon-only"><i class="icon icon-back"></i></a></div>
+            <div class="center">Payment Data</div>
+        </div>
+
+    </div>
+    <form data-search-list=".search-here" data-search-in=".item-title" class="searchbar searchbar-init" >
+        <div class="searchbar-input">
+            <input type="search" placeholder="Search" ng-model="search" /><a ng-click="clear()" class="searchbar-clear"></a>
+        </div>
+    </form>
+    <div class="searchbar-overlay"></div>
+    <div class="page-content" style="padding-top: 100px;">
+
+        <div class="list-block accordion-list">
+
+            <ul>
+                <li class="accordion-item" ng-repeat="item in users | filter:filterFunction">
+                    <a href="#" class="item-link item-content">
+                        <div class="item-media"><i class="icon ion-ios-person-outline" style="font-size: 2em;"></i></div>
+                        <div class="item-inner">
+                            <div class="item-title">{{item.customerName}}</div>
+                        </div>
+                    </a>
+                    <div class="accordion-item-content">
+                        <div class="content-block">
+                            <p>
+                                <div class="row list-resume-info">
+                                    <div class="col-100">
+                                        <span class="title">STRIPEID</span>
+                                        <span class="value">{{item.stripeId}}</span>
+                                    </div>
+                                    <div class="col-100">
+                                        <span class="title">BALANCEDATE</span>
+                                        <span class="value">{{item.balanceDate}}</span>
+                                    </div>
+                                    <div class="col-100">
+                                        <div >
+                                            <span class="title">TOTALAMOUNT</span>
+                                            <span class="value">{{item.netAmount}} &euro;</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</div>

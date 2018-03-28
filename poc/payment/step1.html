@@ -16,33 +16,7 @@
                     <div class="item-content">
                         <div class="item-inner">
                             <div class="item-title label">FISCAL CODE / VAT NUMBER </div>
-                            <div class="item-input">
-                                <input type="text" ng-model="user.payment.vat" placeholder="C.F. o P.IVA" />
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="item-content">
-                        <div class="item-inner">
-                            <div class="item-title label">CF or VAT number of the card holder, if different</div>
-                            <div class="item-input">
-                                <input type="text" ng-model="user.payment.vat2" placeholder="C.F. o P.IVA" />
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="item-content">
-
-                        <div class="item-inner">
-                            <div class="item-title label">TYPE OF CONTRACT</div>
-                            <div class="item-input">
-                                <select ng-model="user.payment.contractType">
-                                    <option>Finanziamento</option>
-                                    <option>Leasing</option>
-                                </select>
-                            </div>
+                            <p typed-effect text="user.payment.vat" delay="1000" blink="false"></p>
                         </div>
                     </div>
                 </li>
@@ -50,9 +24,7 @@
                     <div class="item-content">
                         <div class="item-inner">
                             <div class="item-title label">CONTRACT NUMBER</div>
-                            <div class="item-input">
-                                <input type="text" ng-model="user.payment.contractNumber" placeholder="Contract number" />
-                            </div>
+                            <p typed-effect text="user.payment.contractNumber" delay="3000" blink="false"></p>
                         </div>
                     </div>
                 </li>
@@ -60,9 +32,8 @@
                     <div class="item-content">
                         <div class="item-inner">
                             <div class="item-title label">AMOUNT (&euro;)</div>
-                            <div class="item-input">
-                                <input type="text" ng-model="user.payment.amount" placeholder="Enter the amount (Ex. 256.25)" />
-                            </div>
+                            <p typed-effect text="user.payment.amount" delay="5000" blink="false"></p>
+                          
                         </div>
                     </div>
                 </li>
@@ -70,9 +41,7 @@
                     <div class="item-content">
                         <div class="item-inner">
                             <div class="item-title label">EMAIL</div>
-                            <div class="item-input">
-                                <input type="email" ng-model="user.payment.email" placeholder="E-mail" />
-                            </div>
+                            <p typed-effect text="user.payment.email" delay="7000" blink="false"></p>
                         </div>
                     </div>
                 </li>
@@ -80,27 +49,15 @@
                     <div class="item-content">
                         <div class="item-inner">
                             <div class="item-title label">MOBILE NUMBER</div>
-                            <div class="item-input">
-                                <input type="number" ng-model="user.payment.phone" placeholder="Enter the Mobile number" />
-                            </div>
+                            <p typed-effect text="user.payment.phone" delay="9000" blink="false"></p>
                         </div>
                     </div>
                 </li>
-                <li class="check-term">
-                    <label class="label-checkbox item-content">
-                        <input type="checkbox" name="ks-checkbox" value="Books" checked="checked" />
-                        <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
-                        <div class="item-inner">
-                            <small class="small">I agree to the treatment of my personal information</small>
-                        </div>
-                    </label>
-                </li>
-
-
+             
             </ul>
         </div>
         <div class="content-block">
-            <p class="buttons-row"><a ng-click="save()" class="button button-raised custom-btn">SEND</a></p>
+            <p class="buttons-row"><a ng-click="save()" ng-class="{'active': finish == true}" class="button button-raised custom-btn">SEND</a></p>
         </div>
     </div>
 </div>

@@ -55,7 +55,7 @@
     background: transparent;
     top: 5%;
     box-shadow: none !important;
-
+    
     .confirm-modal {
         border-radius: 10px;
         border: solid 3px $light-color;
@@ -106,6 +106,123 @@
                     font-size: 1em;
                     font-weight: bold;
                     display: inline-block;
+                }
+            }
+        }
+
+        .total-info {
+            margin-top: 10px;
+            padding: 10px;
+
+            .str-line {
+                text-decoration: line-through;
+            }
+
+            h3 {
+                font-size: 1em;
+                margin: 0 0 5px 0;
+                padding: 0;
+                font-weight: normal;
+            }
+
+            h5 {
+                font-weight: normal;
+                font-size: .9em;
+                margin: 0 0 5px 0;
+                padding: 0;
+            }
+
+            h3, h5 {
+                text-align: right;
+
+                strong {
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .list-block {
+            margin-top: 0;
+        }
+
+        .edit-btn {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            font-size: .7em;
+            font-weight: bold;
+        }
+
+        .logo-fly {
+            width: 100%;
+            text-align: center;
+            background-color: #fff;
+            border-bottom: solid 3px $light-color;
+
+            img {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+.end-payment {
+    padding: 0 20px 70px 20px;
+    max-height: 500px;
+    background: transparent;
+    top: 5%;
+    box-shadow: none !important;
+
+    .confirm-modal {
+        border-radius: 10px;
+        border: solid 3px $light-color;
+        box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.5);
+
+        .page {
+            background-color: $bg-color;
+            color: $color;
+
+            .icon-r {
+                width: 120px;
+                display: inline-block;
+                position: absolute;
+                right: 15px;
+                top: 10px;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .item-content {
+                margin-bottom: 15px;
+                padding-top: 20px;
+                justify-content: baseline;
+            }
+        }
+
+        .download-block {
+            border-top: solid 1px;
+        }
+
+        .resume-list {
+            li {
+                border-bottom: solid 1px;
+            }
+
+            .pull-left {
+                font-size: 1.5em;
+            }
+
+            h3 {
+                font-size: .8em;
+                margin-left: 15px;
+                font-weight: lighter;
+
+                small {
+                    font-size: 1em;
+                    font-weight: bold;
+                    display: block;
                 }
             }
         }

@@ -1,6 +1,24 @@
 ﻿img {
     height: 84px;
 }
+.title-app {
+    margin: 0;
+    position: absolute;
+    top: 5%;
+    width: 50%;
+    left: 0px;
+    background-color: #607d8b;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px;
+}
+.pull-left{
+    float:left;
+}
+.pull-right{
+    float: right;
+}
 .small {
     font-size: .7em;
 }
@@ -77,7 +95,12 @@
 
     &.red {
         background-color: #ff4a4a;
-        color: #fff!important;
+        color: #fff !important;
+    }
+
+    &.active {
+        background-color: #5fc532;
+        color: #fff !important;
     }
 }
 .icon-center {

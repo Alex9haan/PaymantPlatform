@@ -23,9 +23,7 @@
                     <div class="item-content">
                         <div class="item-inner">
                             <div class="item-title label">INSERT A BILLING ADDRESS</div>
-                            <div class="item-input">
-                                <input type="text" ng-model="user.info.address" placeholder="Billing Address" />
-                            </div>
+                            <p typed-effect text="user.info.address" delay="2000" blink="false"></p>
                         </div>
                     </div>
                 </li>
@@ -44,7 +42,7 @@
             <br />
         </div>
         <div class="content-block">
-            <p class="buttons-row"><a  data-popup=".confirm-card" ng-click="save()" class="button button-raised custom-btn">SUBSCRIBE</a></p>
+            <p class="buttons-row"><a  data-popup=".confirm-card" ng-click="save()" class="button button-raised custom-btn" ng-class="{'active': finish == true}">SUBSCRIBE</a></p>
         </div>
     </div>
 </div>

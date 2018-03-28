@@ -4,7 +4,7 @@
     </div>
     <div class="page-content custom-bg">
         <div class="title-block">
-            <a href="payment/step1.html" class="ion-close-round close-btn"></a>
+            <a href="home.html" class="ion-close-round close-btn"></a>
             <h3>Pay the installment expired</h3>
             <p>
                 This is the summary of the data
@@ -48,14 +48,14 @@
                     <div class="item-content">
                         <div class="item-inner">
                             <div class="item-title label">MOBILE NUMBER</div>
-                            <label>{{user.payment.email}}</label>
+                            <label>{{user.payment.phone}}</label>
                         </div>
                     </div>
                 </li>
             </ul>
         </div>
         <div class="content-block">
-            <p class="buttons-row"><a ng-click="save()" class="button button-raised custom-btn">PAYMENT</a></p>
+            <p ng-if="!saved" class="buttons-row"><a ng-click="save()" class="button button-raised custom-btn" ng-class="{'active': finish == true}">PAYMENT</a></p>
         </div>
     </div>
 </div>

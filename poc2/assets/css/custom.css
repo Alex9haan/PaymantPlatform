@@ -141,14 +141,20 @@ img {
     border-bottom: none !important; }
 
 .serach-box {
-  margin-top: 40px;
-  padding-bottom: 0;
-  margin-bottom: 0; }
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  z-index: 9; }
+  .serach-box .searchbar-input {
+    padding-top: 10px; }
   .serach-box .item-input-field:after, .serach-box .input-field:after {
     background-color: transparent; }
 
 .accordion-list {
-  margin-top: 0 !important; }
+  margin-top: 90px !important; }
+
+.page-content-list {
+  position: initial !important; }
 
 .list-form {
   margin-left: 10px;

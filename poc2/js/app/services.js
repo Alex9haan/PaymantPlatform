@@ -5,7 +5,7 @@
             {
                 "id": "1",
                 "stripeId": "ch_1C5w8RCMyKESWEHVvdrUF3NY",
-                "customerName": "Bianchi Roberto",
+                "customerName": "Mario Rossi",
                 "customerCode": "YVE1000000",
                 "splitPayment": "no",
                 "requestDate": "15\/03\/2018 14:27",

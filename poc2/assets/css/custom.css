@@ -140,6 +140,16 @@ img {
   .searchbar input {
     border-bottom: none !important; }
 
+.serach-box {
+  margin-top: 40px;
+  padding-bottom: 0;
+  margin-bottom: 0; }
+  .serach-box .item-input-field:after, .serach-box .input-field:after {
+    background-color: transparent; }
+
+.accordion-list {
+  margin-top: 0 !important; }
+
 .list-form {
   margin-left: 10px;
   margin-right: 20px;

@@ -136,7 +136,7 @@ img {
       margin-right: 5px; }
 
 .searchbar {
-  top: 100px !important; }
+  top: 80px !important; }
   .searchbar input {
     border-bottom: none !important; }
 
@@ -149,12 +149,6 @@ img {
     padding-top: 10px; }
   .serach-box .item-input-field:after, .serach-box .input-field:after {
     background-color: transparent; }
-
-.accordion-list {
-  margin-top: 90px !important; }
-
-.page-content-list {
-  position: initial !important; }
 
 .list-form {
   margin-left: 10px;
@@ -195,7 +189,7 @@ img {
 
 .navbar {
   box-shadow: none !important;
-  height: 100px; }
+  height: 80px; }
   .navbar .image {
     width: 100%;
     min-height: 100%;
